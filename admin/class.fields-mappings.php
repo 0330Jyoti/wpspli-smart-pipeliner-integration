@@ -103,7 +103,7 @@ class WPSPLI_Smart_Pipeliner_Field_Mappings {
         $wp_module 		= isset($_GET['wp_module']) ? sanitize_text_field($_GET['wp_module']) : false;
         $pipeliner_module 	= isset($_GET['pipeliner_module']) ? sanitize_text_field($_GET['pipeliner_module']) : false;
 
-        $smart_pipeliner_obj = new WPSPLI_Smart_Zoho();
+        $smart_pipeliner_obj = new WPSPLI_Smart_Pipeliner();
         $wp_modules 	= $smart_pipeliner_obj->get_wp_modules();
         $getListModules = $smart_pipeliner_obj->get_pipeliner_modules();
         

@@ -10,23 +10,23 @@ class WPSPLI_Smart_PipeLiner_Public {
 
 
     private function loadCustomerAction() {
-        add_action( 'user_register', array($this, 'addUserToZoho') );
-        add_action( 'profile_update', array($this, 'addUserToZoho'), 10, 1 );
-        add_action( 'woocommerce_update_customer', array($this, 'addUserToZoho'), 10, 1 );
+        add_action( 'user_register', array($this, 'addUserToPipeliner') );
+        add_action( 'profile_update', array($this, 'addUserToPipeliner'), 10, 1 );
+        add_action( 'woocommerce_update_customer', array($this, 'addUserToPipeliner'), 10, 1 );
     }
 
 
     private function loadOrderAction() {
-        add_action( 'save_post', array( $this, 'addOrderToZoho' ), 10, 1 );
-        add_action('woocommerce_thankyou', array( $this, 'addOrderToZoho' ), 10, 1);
+        add_action( 'save_post', array( $this, 'addOrderToPipeliner' ), 10, 1 );
+        add_action('woocommerce_thankyou', array( $this, 'addOrderToPipeliner' ), 10, 1);
     }
 
 
     private function loadProductAction() {
-        add_action( 'woocommerce_update_product', array( $this, 'addProductToZoho' ), 10, 1 );
+        add_action( 'woocommerce_update_product', array( $this, 'addProductToPipeliner' ), 10, 1 );
     }
 
-    public function addUserToZoho( $user_id ){
+    public function addUserToPipeliner( $user_id ){
         global $wpdb;
         $data       = array();
         $user_info  = get_userdata($user_id);
@@ -68,7 +68,7 @@ class WPSPLI_Smart_PipeLiner_Public {
     }
 
 
-    public function addOrderToZoho( $order_id ){
+    public function addOrderToPipeliner( $order_id ){
         global $wpdb, $post_type; 
         $data       = array();
 
@@ -113,7 +113,7 @@ class WPSPLI_Smart_PipeLiner_Public {
     }
 
 
-    public function addProductToZoho( $post_id ){
+    public function addProductToPipeliner( $post_id ){
         global $wpdb, $post_type, $data; 
         $data = array();
 
@@ -175,7 +175,7 @@ class WPSPLI_Smart_PipeLiner_Public {
             $smart_pipeliner_relation = array();
         }
 
-        $pipeliner_api_obj   = new WPSPLI_Smart_Zoho_API();
+        $pipeliner_api_obj   = new WPSPLI_Smart_Pipeliner_API();
         
         foreach ($data as $pipeliner_module => $pipeliner_data) {
             

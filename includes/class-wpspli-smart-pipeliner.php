@@ -37,7 +37,7 @@ class WPSPLI_Smart_PipeLiner {
 
 	public function get_pipeliner_modules(){
 
-		$pipeliner_api_obj   = new WPSPLI_Smart_Zoho_API();
+		$pipeliner_api_obj   = new WPSPLI_Smart_Pipeliner_API();
        
         /*get list modules*/
         $getListModules = $pipeliner_api_obj->getListModules();
@@ -214,7 +214,7 @@ class WPSPLI_Smart_PipeLiner {
     public function store_required_field_mapping_data(){
 
         global $wpdb;
-        $pipeliner_api_obj   = new WPSPLI_Smart_Zoho_API();
+        $pipeliner_api_obj   = new WPSPLI_Smart_Pipeliner_API();
         $wp_modules     = $this->get_wp_modules();
         $getListModules = $this->get_pipeliner_modules();
 

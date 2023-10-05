@@ -38,14 +38,14 @@
             </td>
         </tr>
 
-        <!-- Zoho Modules Row -->
+        <!-- Pipeliner Modules Row -->
         <tr valign="top">
             <th scope="row" class="titledesc">
-                <label><?php echo  esc_html__( 'Zoho Modules', 'wpspli-smart-pipeliner' ); ?></label>
+                <label><?php echo  esc_html__( 'Pipeliner Modules', 'wpspli-smart-pipeliner' ); ?></label>
             </th>
             <td class="forminp forminp-text">
                 <select name="pipeliner_module">
-                    <option><?php echo  esc_html__('Select Zoho Module', 'wpspli-smart-pipeliner'); ?></option>
+                    <option><?php echo  esc_html__('Select Pipeliner Module', 'wpspli-smart-pipeliner'); ?></option>
                     <?php
                         $pipeliner_modules_options = "";
 
@@ -65,19 +65,19 @@
             </td>
         </tr>
 
-        <!-- Zoho Fields Row -->
+        <!-- Pipeliner Fields Row -->
         <tr valign="top">
             <th scope="row" class="titledesc">
-                <label><?php echo  esc_html__( 'Zoho Fields', 'wpspli-smart-pipeliner' ); ?></label>
+                <label><?php echo  esc_html__( 'Pipeliner Fields', 'wpspli-smart-pipeliner' ); ?></label>
             </th>
             <td class="forminp forminp-text">
                 <select name="pipeliner_field">
-                    <option><?php echo  esc_html__('Please select Zoho Modules', 'wpspli-smart-pipeliner'); ?></option>
+                    <option><?php echo  esc_html__('Please select Pipeliner Modules', 'wpspli-smart-pipeliner'); ?></option>
                 </select>
             </td>
         </tr>
 
-        <!-- Zoho Modules Row -->
+        <!-- Pipeliner Modules Row -->
         <tr valign="top">
             <th scope="row" class="titledesc">
                 <label><?php echo  esc_html__( 'Status', 'wpspli-smart-pipeliner' ); ?></label>
@@ -90,7 +90,7 @@
             </td>
         </tr>
 
-        <!-- Zoho Modules Row -->
+        <!-- Pipeliner Modules Row -->
         <tr valign="top">
             <th scope="row" class="titledesc">
                 <label><?php echo esc_html__( 'Description', 'wpspli-smart-pipeliner' ); ?></label>

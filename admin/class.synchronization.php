@@ -30,22 +30,22 @@ class WPSPLI_Smart_PipeLiner_Admin_Synchronization {
                 
                 case 'products':
                     
-                    $WPSPLI_Smart_Zoho_Public = new WPSPLI_Smart_Zoho_Public();
-                    $WPSPLI_Smart_Zoho_Public->addProductToZoho( $id );
+                    $WPSPLI_Smart_Pipeliner_Public = new WPSPLI_Smart_Pipeliner_Public();
+                    $WPSPLI_Smart_Pipeliner_Public->addProductToPipeliner( $id );
 
                     break;
 
                 case 'orders':
                     
-                    $WPSPLI_Smart_Zoho_Public = new WPSPLI_Smart_Zoho_Public();
-                    $WPSPLI_Smart_Zoho_Public->addOrderToZoho( $id );
+                    $WPSPLI_Smart_Pipeliner_Public = new WPSPLI_Smart_Pipeliner_Public();
+                    $WPSPLI_Smart_Pipeliner_Public->addOrderToPipeliner( $id );
 
                     break;
 
                 case 'customers':
                     
-                    $WPSPLI_Smart_Zoho_Public = new WPSPLI_Smart_Zoho_Public();
-                    $WPSPLI_Smart_Zoho_Public->addUserToZoho( $id );
+                    $WPSPLI_Smart_Pipeliner_Public = new WPSPLI_Smart_Pipeliner_Public();
+                    $WPSPLI_Smart_Pipeliner_Public->addUserToPipeliner( $id );
 
                     break;    
                 

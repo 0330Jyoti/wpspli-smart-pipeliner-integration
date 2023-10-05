@@ -118,7 +118,7 @@ class WPSPLI_Smart_PipeLiner_API {
     function getModuleFields( $token, $module ) {
         
         $header = array(
-            'Authorization: Zoho-oauthtoken '.$token->access_token,
+            'Authorization: Pipeliner-oauthtoken '.$token->access_token,
             'Content-Type: application/json',
         );
         
@@ -156,10 +156,10 @@ class WPSPLI_Smart_PipeLiner_API {
 
         $data = json_encode( $data );
         $header = array(
-            'Authorization: Zoho-oauthtoken '.$this->token->access_token,
+            'Authorization: Pipeliner-oauthtoken '.$this->token->access_token,
         );
         
-        $url = WPSPLI_ZOHOAPIS_URL.'/crm/v2/'.$module;
+        $url = WPSPLI_PIPELINERAPIS_URL.'/crm/v2/'.$module;
         
         $ch = curl_init( $url );
         curl_setopt( $ch, CURLOPT_HTTPHEADER, $header );
@@ -194,10 +194,10 @@ class WPSPLI_Smart_PipeLiner_API {
         
         $data = json_encode( $data );
         $header = array(
-            'Authorization: Zoho-oauthtoken '.$this->token->access_token,
+            'Authorization: Pipeliner-oauthtoken '.$this->token->access_token,
         );
         
-        $url = WPSPLI_ZOHOAPIS_URL.'/crm/v2/'.$module.'/'.$record_id;
+        $url = WPSPLI_PIPELINERAPIS_URL.'/crm/v2/'.$module.'/'.$record_id;
         
         $ch = curl_init( $url );
         curl_setopt( $ch, CURLOPT_HTTPHEADER, $header );

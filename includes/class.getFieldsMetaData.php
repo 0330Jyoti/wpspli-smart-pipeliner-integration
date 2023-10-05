@@ -6,7 +6,7 @@ class GetFieldsMetaData{
         $url = WPSPLI_PIPELINERAPIS_URL."/crm/v2/settings/fields?module=".$module;
         
         $curl = curl_init();
-        $authtoken = array('Authorization: Zoho-oauthtoken '.$token->access_token);
+        $authtoken = array('Authorization: Pipeliner-oauthtoken '.$token->access_token);
         curl_setopt_array($curl, array(
           CURLOPT_URL => $url,
           CURLOPT_RETURNTRANSFER => true,

@@ -2,7 +2,7 @@
 /**
  * Plugin Name:       WPSPLI Smart PipeLiner Integration
  * Plugin URI:        https://profiles.wordpress.org/iqbal1486/
- * Description:       WP Smart Zoho help you to manage and synch possible WordPress data like customers, orders, products to the Zoho modules as per your settings options.
+ * Description:       WP Smart Pipeliner help you to manage and synch possible WordPress data like customers, orders, products to the Pipeliner modules as per your settings options.
  * Version:           2.1.0
  * Requires at least: 5.2
  * Requires PHP:      7.2

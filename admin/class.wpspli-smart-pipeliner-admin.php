@@ -87,15 +87,15 @@ class WPSPLI_Smart_PipeLiner_Admin {
 
             switch ( $_REQUEST['wp_module_name'] ) {
                 case 'customers':
-                    $wp_fields = WPSPLI_Smart_Zoho::get_customer_fields();
+                    $wp_fields = WPSPLI_Smart_Pipeliner::get_customer_fields();
                     break;
 
                 case 'orders':
-                    $wp_fields = WPSPLI_Smart_Zoho::get_order_fields();
+                    $wp_fields = WPSPLI_Smart_Pipeliner::get_order_fields();
                     break;
 
                 case 'products':
-                    $wp_fields = WPSPLI_Smart_Zoho::get_product_fields();
+                    $wp_fields = WPSPLI_Smart_Pipeliner::get_product_fields();
                     break;
 
                 default:
@@ -123,11 +123,11 @@ class WPSPLI_Smart_PipeLiner_Admin {
 
        if( isset($_REQUEST['pipeliner_module_name']) ){
             $pipeliner_module    = $_REQUEST['pipeliner_module_name'];
-                $pipeliner_api_obj   = new WPSPLI_Smart_Zoho_API();
+                $pipeliner_api_obj   = new WPSPLI_Smart_Pipeliner_API();
                 $pipeliner_fields    = $pipeliner_api_obj->getFieldsMetaData($pipeliner_module);
        }
        
-       $pipeliner_fields_options = "<option>".esc_html__('Select Zoho Fields', 'wpspli-smart-pipeliner')."</option>";
+       $pipeliner_fields_options = "<option>".esc_html__('Select Pipeliner Fields', 'wpspli-smart-pipeliner')."</option>";
        
        if($pipeliner_fields){
             foreach ($pipeliner_fields['fields'] as $pipeliner_field_key => $pipeliner_field_data) {

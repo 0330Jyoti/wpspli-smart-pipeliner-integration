@@ -7,8 +7,8 @@
     <table id="mapping-list-table" class="wp-list-table widefat fixed striped table-view-list display">
         <thead>
             <th><?php echo esc_html__('Id', 'wpspli-smart-pipeliner'); ?></th>
-            <th><?php echo esc_html__('Zoho Module', 'wpspli-smart-pipeliner'); ?></th>
-            <th><?php echo esc_html__('Zoho Field', 'wpspli-smart-pipeliner'); ?></th>
+            <th><?php echo esc_html__('Pipeliner Module', 'wpspli-smart-pipeliner'); ?></th>
+            <th><?php echo esc_html__('Pipeliner Field', 'wpspli-smart-pipeliner'); ?></th>
             <th><?php echo esc_html__('WP Module', 'wpspli-smart-pipeliner'); ?></th>
             <th><?php echo esc_html__('WP Field', 'wpspli-smart-pipeliner'); ?></th>
             <th><?php echo esc_html__('Status', 'wpspli-smart-pipeliner'); ?></th>
@@ -18,8 +18,8 @@
 
         <tfoot>
             <th><?php echo esc_html__('Id', 'wpspli-smart-pipeliner'); ?></th>
-            <th><?php echo esc_html__('Zoho Module', 'wpspli-smart-pipeliner'); ?></th>
-            <th><?php echo esc_html__('Zoho Field', 'wpspli-smart-pipeliner'); ?></th>
+            <th><?php echo esc_html__('Pipeliner Module', 'wpspli-smart-pipeliner'); ?></th>
+            <th><?php echo esc_html__('Pipeliner Field', 'wpspli-smart-pipeliner'); ?></th>
             <th><?php echo esc_html__('WP Module', 'wpspli-smart-pipeliner'); ?></th>
             <th><?php echo esc_html__('WP Field', 'wpspli-smart-pipeliner'); ?></th>
             <th><?php echo esc_html__('Status', 'wpspli-smart-pipeliner'); ?></th>

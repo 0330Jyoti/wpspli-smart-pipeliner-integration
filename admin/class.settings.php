@@ -21,7 +21,7 @@ class WPSPLI_Smart_PipeLiner_Admin_Settings {
             
             if ( $client_id && $client_secret ) {
                 $redirect_uri = esc_url(WPSPLI_REDIRECT_URI);
-                $redirect_url = "$wpspli_smart_pipeliner_data_center/oauth/v2/auth?client_id=$client_id&redirect_uri=$redirect_uri&response_type=code&scope=ZohoCRM.modules.all,ZohoCRM.settings.all&access_type=offline";
+                $redirect_url = "$wpspli_smart_pipeliner_data_center/oauth/v2/auth?client_id=$client_id&redirect_uri=$redirect_uri&response_type=code&scope=PipelinerCRM.modules.all,PipelinerCRM.settings.all&access_type=offline";
                 if ( wp_redirect( $redirect_url ) ) {
 				    exit;
 				}

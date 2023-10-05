@@ -136,7 +136,7 @@
 
 		<?php }else if( isset($tab) && 'synch_settings' == $tab ){ ?>
 			<?php 
-				$smart_pipeliner_obj   = new WPSPLI_Smart_Zoho();
+				$smart_pipeliner_obj   = new WPSPLI_Smart_Pipeliner();
 		        $wp_modules 	= $smart_pipeliner_obj->get_wp_modules();
 		        $getListModules = $smart_pipeliner_obj->get_pipeliner_modules();
 			?>
@@ -149,7 +149,7 @@
 					            	foreach ($wp_modules as $wp_module_key => $wp_module_name) {
 					            		?>
 						            		<tr>
-												<th scope="row"><label><?php echo esc_html__( "Enable {$wp_module_key} to Zoho {$singleModule['api_name']} Sync", 'wpspli-smart-pipeliner' ); ?></label></th>
+												<th scope="row"><label><?php echo esc_html__( "Enable {$wp_module_key} to Pipeliner {$singleModule['api_name']} Sync", 'wpspli-smart-pipeliner' ); ?></label></th>
 												<td>
 													<fieldset>
 														<label>
